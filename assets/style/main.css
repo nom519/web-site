@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+html {
+    font-size: calc(10 * 100vw / 375);
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+@media (min-width:768px) {
+html {
+        font-size: calc(10 * 100vw / 1200);
+        scroll-padding-top: 5rem;
+        scroll-behavior: smooth;
+    }
+}
+
+@media (min-width: 1200px) {
+html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-family: "Noto Sans JP",sans-serif;
+    line-height: 1.75;
+    color: #000;
+    padding-top: 6.3rem;
+}
+@media (min-width: 768px) {
+    body {
+    font-size: 1.6rem;
+    padding-top: 11.4rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* 共通部分
+------------------------------*/
+/* ヘッダー */
+.header {
+    height: 6.3rem;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    padding: 1.9rem 1.6rem 0;
+}
+@media (min-width:768px) {
+    .header {
+        height: 11.4rem;
+        padding-top: 4.2rem;
+
+    }
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (min-width:768px) {
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 120rem;
+        margin-inline: auto;
+    }
+}
+.header__logo .pc {
+    line-height: 1;
+    width: 19.7rem;
+    display: block;
+}
+@media (min-width:768px) {
+    .header__logo .pc {
+        width: 26.3rem;
+        display: block;
+    }
+}
+.header__logo img {
+    width: 100%;
+}
+
+/* ハンバーガーボタン */
+.hamburger-button {
+    width: 2.4rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+@media (min-width:768px) {
+    .hamburger-button {
+        display: none;
+    }
+}
+.hamburger-button img {
+    width: 100%;
+}
+
+/* sp ナビゲーション */
+.sp-nav {
+    position: fixed;
+    top: 6.3rem;
+    z-index: 1000;
+    width: 34.2rem;
+    background-color: #168352;
+    border-radius: 2.4rem;
+    display: none;
+}
+.sp-nav-list {
+    padding-top: 4rem;
+}
+.sp-nav-list-text {
+    list-style: none;
+}
+.sp-nav-list-text a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 4rem;
+    width: 100%;
+}
+.pc-nav {
+    display: none;
+}
+
+/* pcナビゲーション */
+@media (min-width: 768px) {
+    .pc-nav {
+        display: block;
+    }
+    .pc-nav-list {
+        display: flex;
+    }
+
+    .pc-nav-list li {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-left: 4rem;
+        transition: .4s;
+    }
+
+
+}
+/* トップページ
+------------------------------ */
+/* メイン */
+.main {
+    padding: 2.4rem 1.6rem 0;
+}
+@media (min-width: 768px) {
+    .main {
+        padding: 5.5rem 1.6rem 0;
+    }
+}
+@media (min-width: 768px) {
+    .main__title {
+        display: flex;
+        max-width: 120rem;
+        margin-inline: auto;
+        padding: 0 3.5rem 6.4rem;
+    }
+}
+.main__title h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .main__title h2 {
+        width: 50%;
+        font-size: 4rem;
+    }
+}
+.main__title p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 3.2rem 0;
+}
+@media (min-width: 768px) {
+    .main__title p {
+        width: 50%;
+        padding: 0 0 0 3.4rem;
+    }
+}
+.main__visual img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .main__visual {
+        max-width: 120rem;
+        margin-inline: auto;
+    }
+}
+
+/* About Us 私たちについて */
+.about-us {
+    padding-top: 5.6rem;
+}
+@media (min-width: 768px) {
+    .about-us {
+        max-width: 120rem;
+        margin-inline: auto;
+        padding: 6.4rem 1.6rem 6.1rem;
+    }
+}
+.section__title {
+    text-align: center;
+}
+.section__title p {
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #168352;
+}
+@media (min-width: 768px) {
+    .section__title p {
+        font-size: 2rem;
+    }
+}
+.section__title h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.2rem 0 2.4rem;
+}
+@media (min-width: 768px) {
+    .section__title h3 {
+        font-size: 2.8rem;
+        margin: 2rem 0 3.3rem;
+    }
+
+}
+.about-us .container {
+    background-image: url(/assets/image/top_about_us_sp.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    padding: 3.2rem 1.6rem;
+} @media (min-width: 768px) {
+    .about-us .container {
+        background-image: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 11.5rem 0 9.7rem;
+    }
+}
+.about-us__description {
+    border-radius: 3.2rem;
+    background-color: #fff;
+    opacity: .8;
+    padding: 2.4rem;
+}
+@media (min-width: 768px) {
+    .about-us__description {
+        border: none;
+        width: 50%;
+        padding: 11.1rem 7.7rem 0 0;
+
+    }
+}
+.about-us__description span {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .about-us__description span {
+        font-size: 2rem;
+    }
+}
+.about-us__description p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+@media (min-width: 768px) {
+    .about-us__description p {
+        margin-top: 4rem;
+    }
+
+}
+.about-us__visual {
+    display: none;
+}
+@media (min-width: 768px) {
+    .about-us__visual {
+        display: block;
+        width: 39rem;
+    }
+    .about-us__visual img {
+        width: 100%;
+    }
+}
+
+/* Features 私たちが選ばれる3つの理由 */
+.features {
+    background-color: #f3f9f6;
+    padding: 5.5rem 1.6rem;
+}
+@media (min-width: 768px) {
+    .features {
+        padding: 6.4rem 1.6rem;
+    }
+}
+.features .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+@media (min-width: 768px) {
+    .features .container {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        justify-content: space-between;
+        max-width: 120rem;
+        margin-inline: auto;
+    }
+}
+.features__item--top img {
+    width: 100%;
+    border-top-left-radius: 2.4rem;
+    border-top-right-radius: 2.4rem;
+}
+.features__item--bottom {
+    width: 34.5rem;
+    background-color: #fff;
+    border-bottom-left-radius: 2.4rem;
+    border-bottom-right-radius: 2.4rem;
+    padding: 2rem 1.6rem;
+}
+@media (min-width: 768px) {
+    .features__item--bottom {
+        padding: 2rem 2rem;
+    }
+}
+.features__item--bottom p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .features__item--bottom p {
+        font-size: 1.9rem;
+    }
+}
+
+/* Products/Service 製品・サービス紹介 */
+.products {
+    padding: 5.6rem 1.6rem;
+}
+.products .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.products__box--large,
+.products__box {
+    border-radius: 2.4rem;
+    background-color: #168352;
+    display: flex;
+    column-gap: 1.7rem;
+    align-items: center;
+}
+.products__box-item {
+    padding: 2rem;
+}
+.products__box-title {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.products__box-title span {
+    display: inline-block;
+}
+
+.products__box-item img {
+    width: 100%
+}
+
+
+
