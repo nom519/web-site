@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-    font-size: calc(10 * 100vw / 375);
+    font-size: calc(10 * 100vw / 390);
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
@@ -58,7 +58,7 @@ img {
 @media (min-width:768px) {
     .header {
         height: 11.4rem;
-        padding-top: 4.2rem;
+        padding: 4.2rem 1.6rem 0;
 
     }
 }
@@ -75,19 +75,24 @@ img {
         margin-inline: auto;
     }
 }
-.header__logo .pc {
+.header__logo {
     line-height: 1;
     width: 19.7rem;
     display: block;
 }
 @media (min-width:768px) {
-    .header__logo .pc {
+    .header__logo {
         width: 26.3rem;
         display: block;
     }
 }
 .header__logo img {
-    width: 100%;
+    width: 75%;
+}
+@media (min-width:768px) {
+    .header__logo img {
+        width: 100%;
+    }
 }
 
 /* ハンバーガーボタン */
@@ -115,13 +120,13 @@ img {
     border-radius: 2.4rem;
     display: none;
 }
-.sp-nav-list {
+.sp-nav__list {
     padding-top: 4rem;
 }
-.sp-nav-list-text {
+.sp-nav__list-text {
     list-style: none;
 }
-.sp-nav-list-text a {
+.sp-nav__list-text a {
     display: flex;
     justify-content: center;
     font-size: 1.8rem;
@@ -139,11 +144,11 @@ img {
     .pc-nav {
         display: block;
     }
-    .pc-nav-list {
+    .pc-nav__list {
         display: flex;
     }
 
-    .pc-nav-list li {
+    .pc-nav__list li {
         display: inline-block;
         font-size: 1.6rem;
         font-weight: 700;
@@ -162,12 +167,14 @@ img {
 @media (min-width: 768px) {
     .main {
         padding: 5.5rem 1.6rem 0;
+        max-width: 120rem;
+        margin-inline: auto;
     }
 }
 @media (min-width: 768px) {
     .main__title {
         display: flex;
-        max-width: 120rem;
+        max-width: 116.8rem;
         margin-inline: auto;
         padding: 0 3.5rem 6.4rem;
     }
@@ -193,15 +200,18 @@ img {
         padding: 0 0 0 3.4rem;
     }
 }
-.main__visual img {
-    width: 100%;
+.main__image {
+    width: 35.8rem
 }
-@media (min-width: 768px) {
-    .main__visual {
-        max-width: 120rem;
-        margin-inline: auto;
+@media (min-width:768px) {
+    .main__image {
+        width: 116.7rem;
     }
 }
+.main__image img {
+    width: 100%;
+}
+
 
 /* About Us 私たちについて */
 .about-us {
@@ -240,14 +250,15 @@ img {
     }
 
 }
-.about-us .container {
+.about-us__container {
     background-image: url(/assets/image/top_about_us_sp.jpg);
     background-position: center;
     background-size: cover;
     max-width: 100%;
     padding: 3.2rem 1.6rem;
-} @media (min-width: 768px) {
-    .about-us .container {
+}
+@media (min-width: 768px) {
+    .about-us__container {
         background-image: none;
         display: flex;
         justify-content: space-between;
@@ -265,7 +276,6 @@ img {
         border: none;
         width: 50%;
         padding: 11.1rem 7.7rem 0 0;
-
     }
 }
 .about-us__description span {
@@ -287,7 +297,6 @@ img {
     .about-us__description p {
         margin-top: 4rem;
     }
-
 }
 .about-us__visual {
     display: none;
@@ -312,49 +321,52 @@ img {
         padding: 6.4rem 1.6rem;
     }
 }
-.features .container {
+.features__container {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
 }
 @media (min-width: 768px) {
-    .features .container {
+    .features__container {
         flex-direction: row;
-        column-gap: 3rem;
         justify-content: space-between;
         max-width: 116.8rem;
         margin-inline: auto;
     }
 }
+.features__item {
+    width: 35.8rem;
+}
 @media (min-width: 768px) {
-    .features__item--top {
-        width: 36.9rem;
+    .features__item {
+        width: 35.3rem;
     }
 }
-.features__item--top img {
-    width: 100%;
+.features__item-image {
+    width: 35.8rem;
     border-top-left-radius: 2.4rem;
     border-top-right-radius: 2.4rem;
 }
-.features__item--bottom {
+@media (min-width: 768px) {
+    .features__item-image {
+        width: 35.3rem;
+    }
+}
+.features__item-image img {
+    width: 100%;
+}
+.features__item-text {
+    font-size: 1.8rem;
+    font-weight: 700;
     background-color: #fff;
     border-bottom-left-radius: 2.4rem;
     border-bottom-right-radius: 2.4rem;
     padding: 2rem 1.6rem;
 }
 @media (min-width: 768px) {
-    .features__item--bottom {
-        width: 36.9rem;
-        padding: 2rem 2rem;
-    }
-}
-.features__item--bottom p {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-@media (min-width: 768px) {
-    .features__item--bottom p {
+    .features__item-text {
         font-size: 1.9rem;
+        padding: 2rem 2rem;
     }
 }
 
@@ -367,13 +379,13 @@ img {
         padding: 6.4rem 1.6rem;
     }
 }
-.products .container {
+.products__container {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
 }
 @media (min-width: 768px) {
-    .products .container {
+    .products__container {
         max-width: 109.8rem;
         margin-inline: auto;
         display: flex;
@@ -382,62 +394,61 @@ img {
         justify-content: space-between;
     }
 }
-.products__box-01,
-.products__box {
-    height: 14rem;
+.products__box,
+.products__box--large {
     border-radius: 2.4rem;
     background-color: #168352;
     display: flex;
     align-items: center;
-
+    padding: 2rem 1rem 2rem 2.3rem;
 }
 @media (min-width: 768px) {
-    .products__box-01 {
-        width: 52.5rem;
-        height: 18rem;
-        padding-left: 2.4rem;
-    }
     .products__box {
         width: 33.3rem;
-        height: 15rem;
-        padding-left: 2.4rem;
     }
+    .products__box--large {
+        width: 52.5rem;
+        padding: 2rem 2.4rem;
+    }
+}
+.products__box-image,
+.products__box--large-image {
+    width: 10rem;
 }
 @media (min-width: 768px) {
-    .products__box-01 .products__box--left img {
-        max-width: 100%;
+    .products__box-image {
+        width: 11rem;
+    }
+    .products__box--large-image {
+        width: 13.3rem;
     }
 }
-.products__box--left img {
-    max-width: 100%;
+.products__box-image img,
+.products__box--large-image img {
+    width: 100%;
 }
-.products__box--right {
+.products__box-text,
+.products__box--large-text {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 700;
+    padding-left: 1.6rem;
 }
 @media (min-width: 768px) {
-    .products__box-01 .products__box--right {
+    .products__box--large-text {
         font-size: 2.4rem;
         padding: 0 3.1rem;
     }
 }
 @media (min-width: 768px) {
-    .products__box--right {
+    .products__box-text {
         font-size: 2rem;
-        padding: 0 2rem;
+        padding: 0 1rem 0 2rem;
     }
 }
-.products__box--right span {
+.products__box-text span,
+.products__box--large-text span {
     display: inline-block;
-}
-@media (min-width: 768px) {
-    .products__box--left-item {
-        width: 13rem;
-    }
-    .products__box--left-item source {
-        width: 100%;
-    }
 }
 
 /* Case お客様の事例紹介 */
@@ -450,13 +461,13 @@ img {
         padding: 6.4rem 1.6rem 6.2rem;
     }
 }
-.case .container {
+.case__container {
     display: flex;
     flex-direction: column;
     row-gap: 3.2rem;
 }
 @media (min-width: 768px) {
-    .case .container {
+    .case__container {
         max-width: 116.8rem;
         margin-inline: auto;
         flex-direction: row;
@@ -464,13 +475,16 @@ img {
         justify-content: space-between;
     }
 }
+.case__item-image {
+    width: 35.8rem;
+    border-radius: 2.4rem;
+}
 @media (min-width: 768px) {
-    .case__item {
+    .case__item-image {
         width: 36.9rem;
     }
 }
-.case__item img {
-    border-radius: 2.4rem;
+.case__item-image img {
     width: 100%;
 }
 .case__item p {
@@ -554,7 +568,7 @@ img {
     text-align: center;
     margin-top: 3.2rem;
 }
-.button__news {
+.news__button {
     width: 30rem;
     background-color: #09947b;
     border-radius: 3.3rem;
@@ -588,7 +602,9 @@ img {
     font-weight: 400;
 }
 @media (min-width: 768px) {
-    font-size: 1.5rem;
+    .footer__list a {
+        font-size: 1.5rem;
+    }
 }
 .footer__list-price {
     border-right: .2rem solid #fff;
@@ -597,3 +613,294 @@ img {
 .footer__list-faq {
     padding-left: 1rem;
 }
+
+/* 価格・スペックページ
+------------------------------ */
+/* メイン */
+.price-main {
+    padding: 2rem 1.6rem 1.6rem;
+}
+@media (min-width: 768px) {
+    .price-main {
+        padding: 4rem 0 0 0;
+        max-width: 120rem;
+        margin-inline: auto;
+    }
+}
+@media (min-width: 768px) {
+    .price-main__visual {
+        position: relative;
+        max-width: 120rem;
+        margin-inline: auto;
+    }
+}
+.price-main__image {
+    width: 35.8rem;
+}
+@media (min-width: 768px) {
+    .price-main__image {
+        width: 120rem;
+    }
+}
+.price-main__image {
+    width: 100%;
+}
+.price-main__title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3.2rem 0;
+}
+@media (min-width: 768px) {
+    .price-main__title {
+        background-color: #fff;
+        font-size: 3.6rem;
+        padding: 4rem 3.6rem 4rem 4rem;
+        border-top-right-radius: 4rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+.price-main__text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: end;
+    padding-right: .5rem;
+}
+
+/* ギャラリー */
+.gallery {
+    padding: 2.4rem 1.6rem 4rem;
+}
+@media (min-width: 768px) {
+    .gallery {
+        max-width: 83.6rem;
+        margin-inline: auto;
+        padding: 6.3rem 1.6rem .9rem;
+    }
+}
+.price-section__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    width: 35.8rem;
+    margin-bottom: 2.4rem;
+    border-bottom: .2rem solid #ddd;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .price-section__title {
+        font-size: 2.8rem;
+        width: 80rem;
+        line-height: 2.5;
+        margin-bottom: 3.2rem;
+    }
+}
+.price-section__title::after {
+    content: "";
+    display: block;
+    border-bottom: .2rem solid #168352;
+    width: 5rem;
+    position: absolute;
+}
+@media (min-width: 768px) {
+        .price-section__title::after {
+            width: 10rem;
+        }
+}
+.gallery__image {
+    width: 35.8rem;
+}
+@media (min-width: 768px) {
+    .gallery__image {
+        width: 80rem;
+    }
+}
+.gallrey__image img {
+    width: 100%;
+}
+
+/* 特長 */
+.merit {
+    padding: 2.4rem 1.6rem 0;
+}
+@media (min-width: 768px) {
+    .merit {
+        max-width: 83.6rem;
+        margin-inline: auto;
+        padding: 6.3rem 1.6rem .9rem;
+    }
+}
+.merit__container {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .merit__container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 80rem;
+        margin-inline: auto;
+    }
+}
+.merit__image {
+    width: 35.8rem;
+}
+@media (min-width: 768px) {
+    .merit__image {
+        width: 24.6rem;
+    }
+}
+.merit__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.6rem 0 4rem;
+}
+@media (min-width: 768px) {
+    .merit__text {
+        max-width: 24.6rem;
+        padding: 1.6rem 0 0 0 ;
+    }
+}
+
+/* メーカー希望小売価格 */
+.retail-price {
+    padding: 2.4rem 1.6rem 4rem;
+}
+@media (min-width: 768px) {
+    .retail-price {
+        max-width: 83.6rem;
+        margin-inline: auto;
+        padding: 6.3rem 1.6rem .9rem;
+    }
+}
+.retail-price__text {
+    font-family: "Montserrat";
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.retail-price__text span {
+    font-family: "Noto Sans JP",sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* スペック */
+.specs {
+    padding: 2.4rem 1.6rem 6.4rem;
+}
+@media (min-width: 768px) {
+    .specs {
+        max-width: 83.6rem;
+        margin-inline: auto;
+        padding: 6.3rem 1.6rem 7.2rem;
+    }
+}
+.specs__title {
+    font-size: 2rem;
+    font-weight: 700;
+    border-left: .2rem solid #168352;
+    padding-left: 1rem;
+    margin-bottom: 2.3rem;
+    margin-left: 3rem;
+}
+@media (min-width: 768px) {
+    .specs__title {
+        font-size: 2.8rem;
+    }
+}
+table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    padding: 0 3rem;
+}
+@media (min-width: 768px) {
+    table {
+        max-width: 74rem;
+        margin-inline: auto;
+
+    }
+}
+th,td {
+    display: block;
+    border: .1rem solid #ddd;
+    padding: 1.2rem 0 1.2rem 2rem;
+}
+@media (min-width: 768px) {
+    th,td {
+        display: inline-block;
+        padding: 2.4rem 0 2.4rem 2rem;
+    }
+}
+th {
+    background-color: #f5f5f5;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    th {
+        width: 20rem;
+    }
+}
+td {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+@media (min-width: 768px) {
+    td {
+        width: 54rem;
+    }
+}
+
+/* お問い合わせ */
+.contact {
+    background-image: url(/assets/image/price_contact_sp.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 36rem;
+    position: relative;
+    padding: 0 1.6rem;
+}
+@media (min-width: 768px) {
+    .contact {
+        background-image: url(/assets/image/price_contact_pc.jpg);
+        height: 70rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contact__button {
+    border: .2rem solid #fff;
+    border-radius: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    width: 35.8rem;
+    height: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 2rem;
+    transition: .8s;
+}
+@media (min-width: 768px) {
+    .contact__button:hover {
+        color: #168352;
+        background-color: #fff;
+    }
+}
+
