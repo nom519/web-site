@@ -53,12 +53,12 @@ img {
     top: 0;
     z-index: 10;
     align-items: center;
-    padding: 1.9rem 1.6rem 0;
+    padding: 2rem 1.6rem 0;
 }
 @media (min-width:768px) {
     .header {
         height: 11.4rem;
-        padding: 4.2rem 1.6rem 0;
+        padding: 4rem 1.6rem 0;
 
     }
 }
@@ -71,13 +71,13 @@ img {
     .header__container {
         display: flex;
         justify-content: space-between;
-        max-width: 120rem;
+        max-width: 116.8rem;
         margin-inline: auto;
     }
 }
 .header__logo {
     line-height: 1;
-    width: 19.7rem;
+    width: 26.3rem;
     display: block;
 }
 @media (min-width:768px) {
@@ -115,16 +115,18 @@ img {
     position: fixed;
     top: 6.3rem;
     z-index: 1000;
-    width: 34.2rem;
+    left: 1.6rem;
+    right: 1.6rem;
     background-color: #168352;
     border-radius: 2.4rem;
     display: none;
 }
 .sp-nav__list {
-    padding-top: 4rem;
+    padding: 3.2rem;
 }
-.sp-nav__list-text {
+.sp-nav__list li {
     list-style: none;
+    padding-bottom: 2.5rem;
 }
 .sp-nav__list-text a {
     display: flex;
@@ -132,8 +134,10 @@ img {
     font-size: 1.8rem;
     font-weight: 700;
     color: #fff;
-    padding-bottom: 4rem;
     width: 100%;
+}
+.sp-nav__list li:last-child {
+    padding-bottom: 0;
 }
 .pc-nav {
     display: none;
@@ -162,11 +166,11 @@ img {
 ------------------------------ */
 /* メイン */
 .main {
-    padding: 2.4rem 1.6rem 0;
+    padding: .8rem 1.6rem 0;
 }
 @media (min-width: 768px) {
     .main {
-        padding: 5.5rem 1.6rem 0;
+        padding: 3.6rem 1.6rem 0;
         max-width: 120rem;
         margin-inline: auto;
     }
@@ -176,7 +180,7 @@ img {
         display: flex;
         max-width: 116.8rem;
         margin-inline: auto;
-        padding: 0 3.5rem 6.4rem;
+        padding: 0 3.5rem 5.8rem 3.4rem;
     }
 }
 .main__title h2 {
@@ -192,12 +196,12 @@ img {
 .main__title p {
     font-size: 1.5rem;
     font-weight: 400;
-    padding: 3.2rem 0;
+    padding: 1.6rem 0 2.6rem;
 }
 @media (min-width: 768px) {
     .main__title p {
         width: 50%;
-        padding: 0 0 0 3.4rem;
+        padding: 1.2rem 0 0 2.1rem;
     }
 }
 .main__image {
@@ -215,13 +219,13 @@ img {
 
 /* About Us 私たちについて */
 .about-us {
-    padding-top: 5.6rem;
+    padding-top: 4.8rem;
 }
 @media (min-width: 768px) {
     .about-us {
         max-width: 120rem;
         margin-inline: auto;
-        padding: 6.4rem 1.6rem 6.1rem;
+        padding: 5.6rem 1.6rem 6.1rem;
     }
 }
 .section__title {
@@ -241,14 +245,14 @@ img {
 .section__title h3 {
     font-size: 2rem;
     font-weight: 700;
-    margin: 1.2rem 0 2.4rem;
+    line-height: 1;
+    margin: .2rem 0 2.4rem;
 }
 @media (min-width: 768px) {
     .section__title h3 {
         font-size: 2.8rem;
-        margin: 2rem 0 3.3rem;
+        margin: .6rem 0 3.3rem .1rem;
     }
-
 }
 .about-us__container {
     background-image: url(/assets/image/top_about_us_sp.jpg);
@@ -269,13 +273,13 @@ img {
     border-radius: 3.2rem;
     background-color: #fff;
     opacity: .8;
-    padding: 2.4rem;
+    padding: 1.6rem 2.4rem 2rem;
 }
 @media (min-width: 768px) {
     .about-us__description {
         border: none;
         width: 50%;
-        padding: 11.1rem 7.7rem 0 0;
+        padding: 10rem 6.9rem 0 0.3rem;
     }
 }
 .about-us__description span {
@@ -291,11 +295,11 @@ img {
 .about-us__description p {
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 2rem;
+    margin-top: .6rem;
 }
 @media (min-width: 768px) {
     .about-us__description p {
-        margin-top: 4rem;
+        margin-top: 2.5rem;
     }
 }
 .about-us__visual {
@@ -314,11 +318,11 @@ img {
 /* Features 私たちが選ばれる3つの理由 */
 .features {
     background-color: #f3f9f6;
-    padding: 5.5rem 1.6rem;
+    padding: 4.6rem 1.6rem 5.7rem;
 }
 @media (min-width: 768px) {
     .features {
-        padding: 6.4rem 1.6rem;
+        padding: 5.9rem 1.6rem 6.6rem;
     }
 }
 .features__container {
@@ -336,10 +340,12 @@ img {
 }
 .features__item {
     width: 35.8rem;
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.05);
+    border-radius:2.4rem;
 }
 @media (min-width: 768px) {
     .features__item {
-        width: 35.3rem;
+        width: 36.9rem;
     }
 }
 .features__item-image {
@@ -349,7 +355,7 @@ img {
 }
 @media (min-width: 768px) {
     .features__item-image {
-        width: 35.3rem;
+        width: 36.9rem;
     }
 }
 .features__item-image img {
@@ -361,22 +367,22 @@ img {
     background-color: #fff;
     border-bottom-left-radius: 2.4rem;
     border-bottom-right-radius: 2.4rem;
-    padding: 2rem 1.6rem;
+    padding: 1.25rem 1.6rem;
 }
 @media (min-width: 768px) {
     .features__item-text {
         font-size: 1.9rem;
-        padding: 2rem 2rem;
+        padding: 1.1rem 2rem;
     }
 }
 
 /* Products/Service 製品・サービス紹介 */
 .products {
-    padding: 5.6rem 1.6rem;
+    padding: 4.9rem 1.6rem 5.7rem;
 }
 @media (min-width: 768px) {
     .products {
-        padding: 6.4rem 1.6rem;
+        padding: 6.1rem 1.6rem;
     }
 }
 .products__container {
@@ -400,7 +406,15 @@ img {
     background-color: #168352;
     display: flex;
     align-items: center;
-    padding: 2rem 1rem 2rem 2.3rem;
+    padding: 2rem 2.3rem 2rem 2.5rem;
+    transition: .4s;
+}
+@media (min-width: 768px) {
+    .products__box:hover,
+    .products__box--large:hover {
+        background-color: #dffaec;
+        cursor: pointer;
+    }
 }
 @media (min-width: 768px) {
     .products__box {
@@ -408,7 +422,7 @@ img {
     }
     .products__box--large {
         width: 52.5rem;
-        padding: 2rem 2.4rem;
+        padding: 2.3rem 2.4rem 2.3rem 3.1rem;
     }
 }
 .products__box-image,
@@ -446,15 +460,23 @@ img {
         padding: 0 1rem 0 2rem;
     }
 }
+@media (min-width: 768px) {
+    .products__box-text:hover,
+    .products__box--large-text:hover {
+        color: #168352;
+    }
+}
 .products__box-text span,
 .products__box--large-text span {
     display: inline-block;
 }
 
+
+
 /* Case お客様の事例紹介 */
 .case {
     background-color: #f3f9f6;
-    padding: 5.5rem 1.6rem;
+    padding: 4.7rem 1.6rem;
 }
 @media (min-width: 768px) {
     .case {
@@ -464,7 +486,7 @@ img {
 .case__container {
     display: flex;
     flex-direction: column;
-    row-gap: 3.2rem;
+    row-gap: 2.5rem;
 }
 @media (min-width: 768px) {
     .case__container {
@@ -473,6 +495,15 @@ img {
         flex-direction: row;
         column-gap: 3rem;
         justify-content: space-between;
+    }
+}
+.case__item {
+    transition: .4s;
+}
+@media (min-width: 768px) {
+    .case__item:hover {
+        opacity: 0.5;
+        cursor: pointer;
     }
 }
 .case__item-image {
@@ -491,7 +522,7 @@ img {
     color: #09947b;
     font-size: 1.8rem;
     font-weight: 700;
-    padding-top: 1.6rem;
+    padding: .9rem 0 0 .2rem;
 }
 @media (min-width: 768px) {
     .case__item p {
@@ -501,7 +532,7 @@ img {
 
 /* News お知らせ */
 .news {
-    padding: 5.5rem 1.6rem 5.6rem;
+    padding: 4.9rem 1.6rem 8.2rem;
 }
 @media (min-width: 768px) {
     .news {
@@ -518,17 +549,11 @@ img {
     }
 }
 .news__list li {
-    padding-top: 1.6rem;
+    padding-top: 1.5rem;
     border-bottom: .2rem #ddd solid;
-}
-@media (min-width: 768px) {
-
 }
 .news__list li:first-child {
     border-top: .2rem #ddd solid;
-}
-@media (min-width: 768px) {
-
 }
 .news__list-date {
     font-size: 1.5rem;
@@ -549,7 +574,7 @@ img {
     font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 1.8rem;
     padding-top: .3rem;
 }
 .news__list-text {
@@ -557,7 +582,7 @@ img {
     color: #09947b;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 1.6rem 0;
+    margin: .9rem .5rem .95rem 0;
 }
 @media (min-width: 768px) {
     .news__list-text {
@@ -566,24 +591,31 @@ img {
 }
 .news__footer {
     text-align: center;
-    margin-top: 3.2rem;
+    margin-top: 4.9rem;
 }
 .news__button {
     width: 30rem;
+    height: 6.6rem;
     background-color: #09947b;
     border-radius: 3.3rem;
-    box-shadow: 0 .2rem #066655;
-    padding: 2.4rem 8.7rem;
+    box-shadow: 0 .5rem #066655;
+    padding: 2rem 8.7rem;
     font-size: 1.8rem;
     font-weight: 700;
     color: #fff;
     line-height: 1;
 }
+@media (min-width: 768px) {
+    .news__button:hover {
+        box-shadow: 0 .2rem #066655;
+        cursor: pointer;
+    }
+}
 
 /* フッター */
 .footer {
     background-color: #168352;
-    padding: 2.8rem 1.6rem;
+    padding: 2.2rem 1.6rem 2.8rem;
 }
 @media (min-width: 768px) {
     .footer {
@@ -608,50 +640,50 @@ img {
 }
 .footer__list-price {
     border-right: .2rem solid #fff;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 .footer__list-faq {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 /* 価格・スペックページ
 ------------------------------ */
 /* メイン */
-.price-main {
+.next-main {
     padding: 2rem 1.6rem 1.6rem;
 }
 @media (min-width: 768px) {
-    .price-main {
+    .next-main {
         padding: 4rem 0 0 0;
         max-width: 120rem;
         margin-inline: auto;
     }
 }
 @media (min-width: 768px) {
-    .price-main__visual {
+    .next-main__visual {
         position: relative;
         max-width: 120rem;
         margin-inline: auto;
     }
 }
-.price-main__image {
+.next-main__image {
     width: 35.8rem;
 }
 @media (min-width: 768px) {
-    .price-main__image {
+    .next-main__image {
         width: 120rem;
     }
 }
-.price-main__image {
+.next-main__image {
     width: 100%;
 }
-.price-main__title {
+.next-main__title {
     font-size: 3rem;
     font-weight: 700;
     padding: 3.2rem 0;
 }
 @media (min-width: 768px) {
-    .price-main__title {
+    .next-main__title {
         background-color: #fff;
         font-size: 3.6rem;
         padding: 4rem 3.6rem 4rem 4rem;
@@ -661,7 +693,7 @@ img {
         bottom: 0;
     }
 }
-.price-main__text {
+.next-main__text {
     font-size: 1.2rem;
     font-weight: 400;
     text-align: end;
@@ -692,6 +724,7 @@ img {
         font-size: 2.8rem;
         width: 80rem;
         line-height: 2.5;
+        border-bottom: .5rem solid #ddd;
         margin-bottom: 3.2rem;
     }
 }
@@ -705,19 +738,61 @@ img {
 @media (min-width: 768px) {
         .price-section__title::after {
             width: 10rem;
+            border-bottom: .5rem solid #168352;
         }
 }
 .gallery__image {
     width: 35.8rem;
+    height: 23.7rem;
+    border-radius: 2.4rem;
+    margin-right: 1rem;
 }
 @media (min-width: 768px) {
     .gallery__image {
         width: 80rem;
+        height: 50rem;
+        border-radius: 2.4rem;
     }
 }
 .gallrey__image img {
-    width: 100%;
+    width: 47.4%;
+    border-radius: 2.4rem;
 }
+@media (min-width: 768px) {
+    .gallery__image img {
+        width: 100%;
+    }
+}
+.slick-dots {
+    bottom: .3rem;
+}
+@media (min-width: 768px) {
+    .slick-dots {
+        bottom: 1.1rem;
+        left: .3rem;
+    }
+}
+.slick-dots li {
+    width: 1.6rem;
+    height: 2.1rem;
+    margin-inline: .1rem;
+}
+.slick-dotted {
+    margin-bottom: .5rem;
+}
+
+.slick-dots li button:before {
+    width: .8rem;
+    height: .8rem;
+    color: #eee;
+    font-size: .8rem;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    color: #168352;
+    opacity: 1;
+}
+
 
 /* 特長 */
 .merit {
@@ -902,5 +977,114 @@ td {
         color: #168352;
         background-color: #fff;
     }
+}
+/* よくあるご質問ページ
+------------------------------*/
+/* アコーディオン */
+.faq__container {
+    padding: 4rem 1.6rem 4.8rem;
+}
+@media (min-width: 768px) {
+    .faq__container {
+        padding: 6.3rem 1.6rem 7.2rem;
+        width: 80rem;
+        margin-inline: auto;
+    }
+}
+.accordion {
+    border: .1rem solid #ccc;
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem;
+}
+@media (min-width: 768px) {
+    .accordion {
+        padding: 3rem 3.2rem 2.4rem;
+    }
+}
+.accordion__title-top {
+    display: flex;
+    flex-direction: row;
+}
+.accordion__title-icon {
+    font-family:  "Montserrat";
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #168352;
+    line-height: 1;
+    padding-right: .7rem;
+}
+@media (min-width: 768px) {
+
+}
+.accordion__title-item {
+    border: .1rem solid #168352;
+    border-radius: .4rem;
+    width: 10rem;
+    height: 2.4rem;
+    color: #168352;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    padding-top: .5rem;
+    margin-left: .8rem;
+}
+.icon {
+    position: relative;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    transition: .6s;
+    cursor: pointer;
+    will-change: transform;
+    margin: 0 0 0 auto;
+}
+.icon:before {
+    content: "";
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: .2rem;
+    border-radius: 1rem;
+    display: block;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+}
+.icon:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    width: .2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    display: block;
+    transition: .3s;
+    will-change: transform;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+}
+.accordion__title.open
+.icon:after {
+    opacity: 0;
+}
+.accordion__title-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: .8rem 3.7rem 0 4.2rem;
+}
+@media (min-width: 768px) {
+    .accordion__title-text {
+        font-size: 1.8rem;
+    }
+}
+.accordion__answer-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
 }
 

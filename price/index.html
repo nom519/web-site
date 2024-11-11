@@ -59,25 +59,27 @@
         </header>
         <main>
             <!--メイン-->
-            <section class="price-main">
-                <div class="price-main__visual">
+            <section class="next-main">
+                <div class="next-main__visual">
                     <picture>
                         <source srcset="/assets/image/price_main_pc.jpg" media="(min-width: 768px)">
-                        <img class="price-main__image" src="/assets/image/price_main_sp.jpg" alt="">
+                        <img class="next-main__image" src="/assets/image/price_main_sp.jpg" alt="">
                     </picture>
-                    <h2 class="price-main__title">価格・スペック</h2>
+                    <h2 class="next-main__title">価格・スペック</h2>
                 </div>
-                <p class="price-main__text">トップ > 価格・スペックページ</p>
+                <p class="next-main__text">トップ > 価格・スペックページ</p>
             </section>
 
             <!--ギャラリー-->
             <section class="gallery">
                 <h3 class="price-section__title">ギャラリー</h3>
-                <picture>
-                    <source srcset="/assets/image/price_gallery_pc.jpg" media="(min-width: 768px)">
-                    <img class="gallery__image" src="/assets/image/price_gallery_sp.jpg" alt="">
-                </picture>
+                <div class="carousel">
+                    <div><img class="gallery__image" src="/assets/image/price_gallery_sp_01.jpg" alt=""></div>
+                    <div><img class="gallery__image" src="/assets/image/price_gallery_pc_02.jpg" alt=""></div>
+                    <div><img class="gallery__image" src="/assets/image/price_gallery_pc_03.jpg" alt=""></div>
+                </div>
             </section>
+
             <!--特長-->
             <section class="merit">
                 <h3 class="price-section__title">特長</h3>
@@ -172,6 +174,7 @@
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="/assets/script/main.js"></script>
 
     </body>
