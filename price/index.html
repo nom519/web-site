@@ -17,7 +17,7 @@
         <!--css-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -42,7 +42,7 @@
                 <!--spナビゲーション-->
                 <nav class="sp-nav">
                     <ul class="sp-nav__list">
-                        <li class="sp-nav__list-text"><a href="#">トップ</a></li>
+                        <li class="sp-nav__list-text"><a href="/">トップ</a></li>
                         <li class="sp-nav__list-text"><a href="/price">価格・スペック</a></li>
                         <li class="sp-nav__list-text"><a href="/faq">よくあるご質問</a></li>
                     </ul>
@@ -67,14 +67,21 @@
                     </picture>
                     <h2 class="next-main__title">価格・スペック</h2>
                 </div>
-                <p class="next-main__text">トップ > 価格・スペックページ</p>
+                <div class="breadcrumb">
+                    <p class="top__title">トップ</p>
+                    <img class="breadcrumb-arrow" src="/assets/image/chevron-right.svg" alt="">
+                    <p class="next__title">価格・スペック</p>
+                </div>
             </section>
 
             <!--ギャラリー-->
             <section class="gallery">
                 <h3 class="price-section__title">ギャラリー</h3>
                 <div class="carousel">
-                    <div><img class="gallery__image" src="/assets/image/price_gallery_sp_01.jpg" alt=""></div>
+                    <picture>
+                        <source srcset="/assets/image/price_gallery_pc_01.jpg" media="(min-width: 768px)">
+                        <img class="gallery__image" src="/assets/image/price_gallery_sp_01.jpg" alt="">
+                    </picture>
                     <div><img class="gallery__image" src="/assets/image/price_gallery_pc_02.jpg" alt=""></div>
                     <div><img class="gallery__image" src="/assets/image/price_gallery_pc_03.jpg" alt=""></div>
                 </div>
@@ -96,7 +103,7 @@
                             <source srcset="/assets/image/price_merit_pc_02.jpg" media="(min-width: 768px)">
                             <img class="merit__image" src="/assets/image/price_merit_sp_02.jpg" alt="">
                         </picture>
-                        <p class="merit__text">高精度のカメラやセンサーを搭載しており、正確な土壌や作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
+                        <p class="merit__text">高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
                     </div>
                     <div class=" merit__item">
                         <picture>
@@ -111,7 +118,7 @@
             <!--メーカー希望小売価格-->
             <section class="retail-price">
                 <h3 class="price-section__title">メーカー希望小売価格</h3>
-                <p class="retail-price__text">￥550,000<span>（税込）</span></p>
+                <p class="retail-price__text">￥<span class="retail-price__text-01">550,000</span><span class="retail-price__text-02">（税込）</span></p>
             </section>
 
             <!--スペック-->
@@ -129,23 +136,23 @@
                     </tr>
                     <tr>
                         <th>飛行時間</th>
-                        <td>60分</td>
+                        <td>60 分</td>
                     </tr>
                     <tr>
                         <th>最大積載量</th>
-                        <td>5kg</td>
+                        <td>5 kg</td>
                     </tr>
                     <tr>
                         <th>操作距離</th>
-                        <td>3kg</td>
+                        <td>3 km</td>
                     </tr>
                     <tr>
                         <th>機体重量</th>
-                        <td>8kg</td>
+                        <td>8 kg</td>
                     </tr>
                     <tr>
                         <th>機体寸法</th>
-                        <td>150x150x40cm</td>
+                        <td>150 x 150 x 40 cm</td>
                     </tr>
                     <tr>
                         <th>機能・特徴</th>
@@ -157,7 +164,6 @@
             <!--お問い合わせ-->
             <div class="contact">
                 <a href="/contact" class="contact__button">お問い合わせ</a>
-
             </div>
 
         </main>
@@ -169,8 +175,8 @@
                 <li class="footer__list-faq"><a href="/faq">よくあるご質問</a></li>
             </ul>
 
-
         </footer>
+
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"></script>
@@ -178,5 +184,4 @@
         <script src="/assets/script/main.js"></script>
 
     </body>
-
 </html>
