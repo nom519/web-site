@@ -14,7 +14,7 @@ html {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1240px) {
 html {
         font-size: 62.5%;
     }
@@ -151,14 +151,23 @@ img {
     .pc-nav__list {
         display: flex;
     }
-    .pc-nav__list li {
+    .pc-nav__list-text {
         display: inline-block;
         font-size: 1.6rem;
         font-weight: 700;
         margin-left: 3.8rem;
         transition: .4s;
+        color: #000;
     }
-
+    .pc-nav__list-text-price,
+    .pc-nav__list-text-faq {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-left: 3.8rem;
+        transition: .4s;
+        color: #168352;
+    }
 }
 /* トップページ
 ------------------------------ */
@@ -195,6 +204,7 @@ img {
     font-size: 1.5rem;
     font-weight: 400;
     padding: 1.6rem 0 2.6rem;
+    line-break: anywhere;
 }
 @media (min-width: 768px) {
     .main__title p {
@@ -603,7 +613,8 @@ img {
     color: #09947b;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: .9rem .5rem .95rem 0;
+    margin: .9rem 0 .95rem 0;
+    letter-spacing: .01rem;
 }
 @media (min-width: 768px) {
     .news__list-text {
@@ -1097,7 +1108,7 @@ td {
     font-weight: 400;
     line-height: 1;
     text-align: center;
-    padding-top: .6rem;
+    padding: .6rem .2rem 0 0;
     margin-left: .8rem;
 }
 @media (min-width: 768px) {
