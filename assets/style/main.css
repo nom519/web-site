@@ -151,13 +151,15 @@ img {
     .pc-nav__list {
         display: flex;
     }
+    .pc-nav__list li {
+        list-style: none;
+    }
     .pc-nav__list-text {
         display: inline-block;
         font-size: 1.6rem;
         font-weight: 700;
         margin-left: 3.8rem;
         transition: .4s;
-        color: #000;
     }
     .pc-nav__list-text-price,
     .pc-nav__list-text-faq {
