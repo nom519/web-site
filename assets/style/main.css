@@ -60,7 +60,6 @@ img {
     .header {
         height: 11.4rem;
         padding: 4rem 1.6rem 0;
-
     }
 }
 .header__container {
@@ -660,7 +659,6 @@ img {
     box-shadow: 0 .1rem 0 #066655;
     transform: translateY(.3rem);
     opacity: 1;
-
 }
 
 /* フッター */
@@ -831,13 +829,11 @@ img {
         border-radius: 2.4rem;
     }
 }
-
 @media (min-width: 768px) {
     .gallery__image {
         width: 100%;
     }
 }
-
 .slick-dots {
     bottom: .1rem;
     left: .4rem;
@@ -901,7 +897,6 @@ img {
         width: 24.6rem;
     }
 }
-
 .merit__text {
     font-size: 1.8rem;
     font-weight: 700;
