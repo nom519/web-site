@@ -42,7 +42,6 @@ img {
     vertical-align: bottom;
 }
 
-
 /* 共通部分
 ------------------------------*/
 /* ヘッダー */
@@ -215,15 +214,12 @@ img {
     }
 }
 .main__image {
-    width: 35.8rem
+    width: 100%;
 }
 @media (min-width:768px) {
     .main__image {
         width: 116.7rem;
     }
-}
-.main__image img {
-    width: 100%;
 }
 
 /* About Us 私たちについて */
@@ -364,7 +360,6 @@ img {
     }
 }
 .features__item {
-    width: 35.8rem;
     box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.05);
     border-radius:2.4rem;
 }
@@ -374,7 +369,7 @@ img {
     }
 }
 .features__item-image {
-    width: 35.8rem;
+    width: 100%;
     border-top-left-radius: 2.4rem;
     border-top-right-radius: 2.4rem;
 }
@@ -382,9 +377,6 @@ img {
     .features__item-image {
         width: 36.9rem;
     }
-}
-.features__item-image img {
-    width: 100%;
 }
 .features__item-text {
     font-size: 1.8rem;
@@ -538,7 +530,7 @@ img {
     }
 }
 .case__item-image {
-    width: 35.8rem;
+    width: 100%;
     border-radius: 2.4rem;
 }
 @media (min-width: 768px) {
@@ -727,14 +719,14 @@ img {
     }
 }
 .next-main__image {
-    width: 35.8rem;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .next-main__image {
         width: 120rem;
     }
 }
-.next-main__image {
+.next-main__image img {
     width: 100%;
 }
 .next-main__title {
@@ -817,10 +809,10 @@ img {
         }
 }
 .gallery__image {
-    width: 35.8rem;
+    width: 100%;
     height: 23.7rem;
     border-radius: 2.4rem;
-    margin-right: 1rem;
+    object-fit: cover;
 }
 @media (min-width: 768px) {
     .gallery__image {
@@ -829,10 +821,19 @@ img {
         border-radius: 2.4rem;
     }
 }
+.gallery__image img {
+    width: 100%;
+}
 @media (min-width: 768px) {
     .gallery__image {
         width: 100%;
     }
+}
+.slick-slide {
+    margin-inline: 1rem;
+}
+.carousel {
+    margin-inline: -1rem;
 }
 .slick-dots {
     bottom: .1rem;
@@ -890,7 +891,7 @@ img {
     }
 }
 .merit__image {
-    width: 35.8rem;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .merit__image {
@@ -933,6 +934,7 @@ img {
     font-family: "Montserrat" ,sans-serif;
     font-size: 3.2rem;
     font-weight: 700;
+    color: #168352;
     line-height: 1;
 }
 @media (min-width: 768px) {
@@ -944,6 +946,7 @@ img {
     font-family: "Montserrat" ,sans-serif;
     font-size: 3.2rem;
     font-weight: 700;
+    color: #168352;
     line-height: 1;
 }
 .retail-price__text-02 {
@@ -1004,12 +1007,12 @@ table {
 th,td {
     display: block;
     border: .1rem solid #ddd;
-    padding: .48rem 0 .49rem 1.9rem;
+    padding: .4rem 0 .5rem 1.9rem;
 }
 @media (min-width: 768px) {
     th,td {
         display: inline-block;
-        padding: 1.75rem 0 1.6rem 1.9rem;
+        padding: 1.7rem 0 1.6rem 1.9rem;
     }
 }
 th {
